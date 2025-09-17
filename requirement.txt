@@ -1,0 +1,11 @@
+dotenv
+streamlit
+langgraph
+langchain-community
+duckduckgo-search
+ddgs-9.5.5
+langchain-openai
+langchian-groq
+markdownify
+requests
+
