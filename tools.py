@@ -6,15 +6,9 @@ from markdownify import markdownify
 @tool
 def website_visit(url :  str ) -> str:
     """
-        Visit and extract content from a specific webpage URL provided by the user (such as company websites, 
-        e-commerce product pages, government portals, or university ranking sites). The content is converted 
-        into clean markdown format for easier reading. 
-
-        Only use this tool when the user explicitly provides a valid link (http/https) and wants details, 
-        summaries, or insights from that exact page. Do not use this tool for general information requests 
-        or when no URL is given — in those cases, use duckduckgo_search instead.  
-
-        Always include the original link in the final answer so the user can verify the source.
+        Use this tool to visit URLs obtained from the search results and extract the main content of the webpages in markdown format.
+    Arg: 
+        url: The url link of the webpage to visit
 """
 
     
@@ -67,11 +61,6 @@ search_tool = Tool(
     Always use this tool for time-sensitive or factual queries where accuracy depends on up-to-date 
     information — never rely on memory for such questions.  
 
-    Examples: 
-    - "What is the latest iPhone price in India?"  
-    - "Who won the recent state elections?"  
-    - "Show me today’s cricket match score."  
-    - "What’s the current weather in Delhi?"  
 
     If there is any doubt about whether freshness matters, always call this tool. 
     Return concise summaries with sources or snippets when possible.
