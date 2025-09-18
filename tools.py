@@ -51,22 +51,19 @@ def calculator(expression: str) -> str:
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.tools import Tool
 
-search = DuckDuckGoSearchRun()
+search_tool = DuckDuckGoSearchRun()
 
-search_tool = Tool(
-    name="duckduckgo_search",
-    func=search.run,
-    description=(
-   """
-        Always Striclty  use ddgs ot this  tool to fetch the latest or up-to-date information, including news, 
-        general knowledge updates, election results, product prices, sports scores, stock 
-        market data, and weather. Never answer such queries from memory. 
+search_tool.description = (
+"""
+    Always Striclty  use ddgs ot this  tool to fetch the latest or up-to-date information, including news, 
+    general knowledge updates, election results, product prices, sports scores, stock 
+    market data, and weather. Never answer such queries from memory. 
 
-        Never rely on memory or mix memory with results. The final answer must always be 
-        based solely on the search output.
-        
-        If the question contains words like 'current', 'latest', 'today', 'yesterday', or a specific year 
-        (e.g., 2025), always call this tool — even if you think you already know the answer. 
+    Never rely on memory or mix memory with results. The final answer must always be 
+    based solely on the search output.
+    
+    If the question contains words like 'current', 'latest', 'today', 'yesterday', or a specific year 
+    (e.g., 2025), always call this tool — even if you think you already know the answer. 
 
 Examples:
 - "Who is the current CM of Delhi?"
@@ -75,7 +72,4 @@ Examples:
 - "Current stock price of TCS"
 - "What’s the weather in Mumbai right now?"
 """
-
-
- )
 )

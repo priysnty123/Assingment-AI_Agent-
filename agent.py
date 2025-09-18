@@ -9,8 +9,10 @@ from langgraph.checkpoint.memory import MemorySaver
 from tools import website_visit , calculator, search_tool
 load_dotenv()
 
+# os.environ["LANGCHAIN_TRACING_V2"] = "false"
+# os.environ["LANGCHAIN_API_KEY"] = ""
 
-model = ChatGroq(model_name="qwen/qwen3-32b ", temperature=0.7) #model="llama-3.3-70b-versatile"  , llama-3.1-8b-instant, openai/gpt-oss-120b
+model = ChatGroq(model_name="qwen/qwen3-32b", temperature=0.7) #model="qwen/qwen3-32b"  , llama-3.1-8b-instant, openai/gpt-oss-120b
 memory = MemorySaver()
 
 
@@ -51,5 +53,5 @@ def ask_agent(query: str, session_id: str):
 
 
 
-# if __name__ == "__main__":
-#     ask_agent("Who is the cm of delhi?", "thread_123")
+if __name__ == "__main__":
+    ask_agent("Who won icc chanmpio trophy 2025?", "thread_123")
