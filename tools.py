@@ -6,9 +6,9 @@ from markdownify import markdownify
 @tool
 def website_visit(url :  str ) -> str:
     """
-    "Visit a specific webpage URL (like any company websites,E-Commerece website, government websites, or university ranking pages) "
-    "to extract the main content in markdown format. "
-    "Use this if the user wants details from a specific website rather than just a search result."
+    Visit a specific webpage URL (like any company websites,E-Commerece website, government websites, or university ranking pages) 
+    to extract the main content in markdown format.
+    Use this if the user wants details from a specific website rather than just a search result.
     """
     
     #send request 
