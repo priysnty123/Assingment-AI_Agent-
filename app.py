@@ -1,15 +1,3 @@
-# import streamlit as st
-# from agent import ask_agent
-
-# st.title("AI Agent")
-# with st.sidebar:
-#    st.header ("")
-   
-   
-# if query:= st.chat_input("Ask Me Anything!"):
-#     st.chat_message("user").write(query)
-#     response = ask_agent(query)
-#     st.chat_message("assistant").write(response)
 
 import streamlit as st
 from agent import ask_agent
@@ -32,15 +20,15 @@ if "thread_id" not in st.session_state:
     st.session_state.thread_id = session_id
 
 
-# --- 2. Main Chat Interface ---
+#  2. Main Chat Interface 
 
 # Display all past messages from session state
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
-# --- 3. NEW DELETE BUTTON LOCATION ---
-# We create two columns. The first one (80%) is empty space.
+#  3. NEW DELETE BUTTON LOCATION 
+# I create two columns. The first one (80%) is empty space.
 # The second one (20%) holds our button. This pushes it to the right.
 col_empty, col_button = st.columns([0.8, 0.2]) # 80% empty, 20% for button
 
@@ -55,7 +43,7 @@ with col_button:
         # Rerun the app to clear the chat from the screen
         st.rerun()
 
-# --- 4. Handle new input ---
+#  4. Handle new input 
 # st.chat_input will always appear at the very bottom,
 # just under your new "Delete Chat" button.
 if query := st.chat_input("Ask Me Anything!"):

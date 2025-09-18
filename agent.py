@@ -14,20 +14,11 @@ from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
 from tools import website_visit , calculator, search_tool
 
-# --- DEBUG CODE ---
 load_dotenv()
 
 model = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0)
 memory = MemorySaver()
 
-# search_result = search.invoke("who is president of usa?")
-# #print(search_result)
-# result = model.invoke([HumanMessage(
-#                                        content="who is president of usa?"
-#                                     + " answer only using the following information:  "
-#                                     +  search_result)])
-                      
-# print(result.content)
 
 tools = [search_tool,website_visit,calculator]
 model = create_react_agent(model,tools, checkpointer=memory )
@@ -57,5 +48,7 @@ def ask_agent(query:str, session_id: str  ):
    
    if hasattr(message, "tool_calls"):
       print(message.tool_calls, "\n")
-      
-   return response["messages"][-1].content
+
+
+
+ return response["messages"][-1].content
