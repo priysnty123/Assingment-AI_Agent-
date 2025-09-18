@@ -13,8 +13,6 @@ def website_visit(url :  str ) -> str:
     
     #send request 
     response = requests.get(url , timeout = 20 )
-    # text = response.text#[:5000]  # trim to 5k chars max
-    # return text
     
     
     #check is request is succesful
@@ -28,8 +26,9 @@ def website_visit(url :  str ) -> str:
     markdown_content = re.sub(r"\n{3,}", "\n\n", markdown_content)
     
     # Return the processed markdown, trimming to a reasonable length
-    return markdown_content[:5000] 
+    return markdown_content 
 
+# [:5000]trim to 5k chars max
 
 
 #print(website_visit.invoke("https://www.apple.com"))
@@ -52,5 +51,5 @@ search = DuckDuckGoSearchRun()
 search_tool = Tool(
     name="duckduckgo_search",
     func=search.run,
-    description="Search the internet using DuckDuckGo"
+    description="Search the internet using DuckDuckGo When i want the latest information and news and the price of something "
 )
