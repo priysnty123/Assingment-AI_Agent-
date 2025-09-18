@@ -51,7 +51,7 @@ search = DuckDuckGoSearchRun()
 search_tool = Tool(
     name="duckduckgo_search",
     func=search.run,
-    description=("Use this tool for any query that requires up-to-date, real-time, or factual information "
+    description=("Use this tool for any query that requires up-to-date, real-time, General Knowledge Question or factual information "
                  "from the internet. Examples include: latest news, election results, product prices, stock "
                  "market updates, sports scores, weather, or anything that may have changed recently. "
                  "Do not attempt to answer these from memory — always call this tool instead."
