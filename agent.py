@@ -53,5 +53,5 @@ def ask_agent(query: str, session_id: str):
 
 
 
-if __name__ == "__main__":
-    ask_agent("Who won icc chanmpio trophy 2025?", "thread_123")
+# if __name__ == "__main__":
+#     ask_agent("Who won icc chanmpio trophy 2025?", "thread_123")
