@@ -10,7 +10,7 @@ from tools import website_visit , calculator, search_tool
 load_dotenv()
 
 
-model = ChatGroq(model_name="qwen/qwen3-32b", temperature=0) #model="llama-3.3-70b-versatile"
+model = ChatGroq(model_name="openai/gpt-oss-120b", temperature=0) #model="llama-3.3-70b-versatile" qwen/qwen3-32b  , llama-3.1-8b-instant
 memory = MemorySaver()
 
 
