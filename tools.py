@@ -54,9 +54,9 @@ search_tool = Tool(
     func=search.run,
     description=(
     """
-    Search the internet in real time using DuckDuckGo to retrieve the latest information, including 
-    general knowledge updates, news, product prices, election results, sports scores, stock market 
-    data, weather, or anything else that may have changed recently. 
+    Srtictly use this tool to Search the internet in real time using DuckDuckGo to retrieve the latest information, including 
+    (general knowledge updates, news, product prices, election results, sports scores, stock market 
+    data, weather, or anything else that may have changed recently). 
 
     Always use this tool for time-sensitive or factual queries where accuracy depends on up-to-date 
     information — never rely on memory for such questions.  
