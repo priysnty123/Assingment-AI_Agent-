@@ -57,18 +57,20 @@ search_tool = Tool(
     name="duckduckgo_search",
     func=search.run,
     description=(
-    """
-        Always use this tool to fetch the latest or up-to-date information, including news, 
+   """
+        Always Striclty  use ddgs ot this  tool to fetch the latest or up-to-date information, including news, 
         general knowledge updates, election results, product prices, sports scores, stock 
-        market data, and weather. Never answer such queries from memory — always search 
-        the internet in real time.
+        market data, and weather. Never answer such queries from memory. 
 
-        Examples:
-        - "What is the latest iPhone price in India?"
-        - "Who won the 2025 Delhi elections?"
-        - "Show me today’s cricket match score between India and Pakistan."
-        - "What is the current weather in Mumbai?"
-        - "Latest stock price of Reliance Industries today"
+        If the question contains words like 'current', 'latest', 'today', 'yesterday', or a specific year 
+        (e.g., 2025), always call this tool — even if you think you already know the answer. 
+
+Examples:
+- "Who is the current CM of Delhi?"
+- "What is the latest iPhone price in India?"
+- "Show me today’s cricket match score."
+- "Current stock price of TCS"
+- "What’s the weather in Mumbai right now?"
 """
 
 
