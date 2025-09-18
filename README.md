@@ -20,7 +20,7 @@ The idea is to build an AI-powered conversational assistant that can:
 
 **1.**Frontend (Streamlit App)****
 
-   Provides a chat interface where users can ask questions.
+   1.Provides a chat interface where users can ask questions.
  
    Maintains chat history using st.session_state.
  
