@@ -62,6 +62,9 @@ search_tool = Tool(
         general knowledge updates, election results, product prices, sports scores, stock 
         market data, and weather. Never answer such queries from memory. 
 
+        Never rely on memory or mix memory with results. The final answer must always be 
+        based solely on the search output.
+        
         If the question contains words like 'current', 'latest', 'today', 'yesterday', or a specific year 
         (e.g., 2025), always call this tool — even if you think you already know the answer. 
 
