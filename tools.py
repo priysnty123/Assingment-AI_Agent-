@@ -6,9 +6,14 @@ from markdownify import markdownify
 @tool
 def website_visit(url :  str ) -> str:
     """
-    Visit a specific webpage URL (like any company websites,E-Commerece website, government websites, or university ranking pages) 
-    to extract the main content in markdown format.
-    Use this if the user wants details from a specific website rather than just a search result.
+    Visit a specific webpage URL (such as company websites, e-commerce product pages, government portals, 
+    or university ranking sites) to extract the main content in clean markdown format. 
+
+    Use this tool only when the user explicitly provides a valid link and wants details or summaries 
+    from that page, rather than general information or search results. 
+
+    Always include the original link in your final response so the user can verify the source.
+
     """
     
     #send request 
@@ -51,9 +56,24 @@ search = DuckDuckGoSearchRun()
 search_tool = Tool(
     name="duckduckgo_search",
     func=search.run,
-    description=("Use this tool for any query that requires up-to-date, real-time, General Knowledge Question or factual information "
-                 "from the internet. Examples include: latest news, election results, product prices, stock "
-                 "market updates, sports scores, weather, or anything that may have changed recently. "
-                 "Do not attempt to answer these from memory — always call this tool instead."
+    description=(
+        """"
+        Search the internet in real time using DuckDuckGo to retrieve the latest information, Answering the general knowledge question, news, 
+        updates, product prices, election results, sports scores, stock market data, weather, or 
+        anything else that may have changed recently. 
+
+        Always use this tool for time-sensitive or factual queries where accuracy depends on up-to-date 
+        information, instead of relying on memory.  
+
+        Examples: 
+        - "What is the latest iPhone price in India?"  
+        - "Who won the recent state elections?"  
+        - "Show me today’s cricket match score."  
+        - "What’s the current weather in Delhi?"  
+
+        Never attempt to answer these questions from memory — always call this tool. 
+        Return concise summaries with sources or snippets when possible.
+"""
+
  )
 )
