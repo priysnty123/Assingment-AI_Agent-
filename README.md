@@ -74,3 +74,12 @@ The idea is to build an AI-powered conversational assistant that can:
   6. dotenv - For managing API keys and environment variables.
 
 
+## 🏃‍♂️ How to Run the Project  
+
+### 1. Clone the Repository  
+```bash
+git clone https://github.com/your-username/ai-agent-chatbot.git
+cd ai-agent-chatbot
+
+
+2. 
