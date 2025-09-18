@@ -1,4 +1,5 @@
-
+from dotenv import load_dotenv
+load_dotenv()
 import streamlit as st
 from agent import ask_agent
 from streamlit.runtime.scriptrunner import get_script_run_ctx
