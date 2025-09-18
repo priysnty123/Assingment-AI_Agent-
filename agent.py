@@ -16,7 +16,7 @@ from tools import website_visit , calculator, search_tool
 
 load_dotenv()
 
-model = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0)
+model = ChatGroq(model_name="qwen/qwen3-32b", temperature=0) #model="llama-3.3-70b-versatile"
 memory = MemorySaver()
 
 
