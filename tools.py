@@ -6,9 +6,13 @@ from markdownify import markdownify
 @tool
 def website_visit(url :  str ) -> str:
     """
-        Use this tool to visit URLs obtained from the search results and extract the main content of the webpages in markdown format.
-    Arg: 
-        url: The url link of the webpage to visit
+        Use this tool to visit URLs obtained from the search results or provided directly by the user, 
+        and extract the main content of the webpage in clean markdown format. 
+        Do not use this tool for general queries without a valid URL.
+    
+    Args:
+        url (str): The URL of the webpage to visit.
+    
 """
 
     
@@ -54,16 +58,17 @@ search_tool = Tool(
     func=search.run,
     description=(
     """
-    Always Srtictly use ddgs tool Search the internet in real time using DuckDuckGo to retrieve the latest information, including 
-    (general knowledge updates, news, product prices, election results, sports scores, stock market 
-    data, weather, or anything else that may have changed recently). 
+        Always use this tool to fetch the latest or up-to-date information, including news, 
+        general knowledge updates, election results, product prices, sports scores, stock 
+        market data, and weather. Never answer such queries from memory — always search 
+        the internet in real time.
 
-    Always use this tool for time-sensitive or factual queries where accuracy depends on up-to-date 
-    information — never rely on memory for such questions.  
-
-
-    If there is any doubt about whether freshness matters, always call this tool. 
-    Return concise summaries with sources or snippets when possible.
+        Examples:
+        - "What is the latest iPhone price in India?"
+        - "Who won the 2025 Delhi elections?"
+        - "Show me today’s cricket match score between India and Pakistan."
+        - "What is the current weather in Mumbai?"
+        - "Latest stock price of Reliance Industries today"
 """
 
 
