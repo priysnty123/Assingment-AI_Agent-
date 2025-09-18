@@ -59,7 +59,7 @@ The idea is to build an AI-powered conversational assistant that can:
 
 
 
-**🛠️ Tools & Frameworks Used**
+## **🛠️ Tools & Frameworks Used**
 
   1. LangGraph - For building the ReAct-style agent with memory.
 
