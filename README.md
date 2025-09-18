@@ -20,57 +20,57 @@ The idea is to build an AI-powered conversational assistant that can:
 
 **1.**Frontend (Streamlit App)****
 
-   1.Provides a chat interface where users can ask questions.
+   1. Provides a chat interface where users can ask questions.
  
-   Maintains chat history using st.session_state.
+   2. Maintains chat history using st.session_state.
  
-   Includes a Delete Chat button to reset the session and start a fresh conversation.
+   3. Includes a Delete Chat button to reset the session and start a fresh conversation.
    
 
 **2.**Backend (Agent System)****
 
-   Uses LangGraph’s ReAct agent to orchestrate reasoning + tool usage.
+   1. Uses LangGraph’s ReAct agent to orchestrate reasoning + tool usage.
 
-   Every conversation is tied to a unique thread_id (session ID), ensuring context-aware
+   2. Every conversation is tied to a unique thread_id (session ID), ensuring context-aware
    responses.
 
-   The agent can decide when to call external tools (search, website visit, calculator).
+   3. The agent can decide when to call external tools (search, website visit, calculator).
    
 
 **3.**Tools Integrated****
 
-   DuckDuckGo Search - Retrieves live internet results.
+   1. DuckDuckGo Search - Retrieves live internet results.
  
-   Website Visitor - Fetches and converts webpage content into Markdown for better  eadability.
+  2. Website Visitor - Fetches and converts webpage content into Markdown for better  eadability.
  
-   Calculator - Evaluates mathematical expressions.
+  3.  Calculator - Evaluates mathematical expressions.
 
 
 **4.**Memory Handling****
 
-   Implemented using MemorySaver from LangGraph.
+   1. Implemented using MemorySaver from LangGraph.
  
-   Ensures continuity of conversations across multiple queries in the same session.
+   2. Ensures continuity of conversations across multiple queries in the same session.
    
 
 5.**Deployment**
 
-   Built with Streamlit, making it easy to run locally or deployed free on Streamlit   Itself.
+  1. Built with Streamlit, making it easy to run locally or deployed free on Streamlit   Itself.
 
 
 
 **🛠️ Tools & Frameworks Used**
 
-  LangGraph - For building the ReAct-style agent with memory.
+  1. LangGraph - For building the ReAct-style agent with memory.
 
-  LangChain Community Tools - For integrating DuckDuckGo search.
+  2. LangChain Community Tools - For integrating DuckDuckGo search.
 
-  LangChain Groq - For connecting to Groq-hosted LLMs (qwen/qwen3-32b).
+  3. LangChain Groq - For connecting to Groq-hosted LLMs (qwen/qwen3-32b).
 
-  Streamlit - For the frontend chat interface.
+  4. Streamlit - For the frontend chat interface.
 
-  Requests + Markdownify - To fetch and format website content.
+  5. Requests + Markdownify - To fetch and format website content.
 
-  dotenv - For managing API keys and environment variables.
+  6. dotenv - For managing API keys and environment variables.
 
 
