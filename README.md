@@ -1,7 +1,7 @@
-**AI Agent Chatbot**
+## **AI Agent Chatbot**
 
 
-**🚀 Idea Behind the Application**
+## **🚀 Idea Behind the Application**
 
 The idea is to build an AI-powered conversational assistant that can:
 
@@ -15,10 +15,10 @@ The idea is to build an AI-powered conversational assistant that can:
 
 
 
-**⚙️ How It Works (Architecture / Approach)**
+## **⚙️ How It Works (Architecture / Approach)**
 
 
-**1.**Frontend (Streamlit App)****
+## **1.**Frontend (Streamlit App)****
 
    1. Provides a chat interface where users can ask questions.
  
@@ -27,7 +27,7 @@ The idea is to build an AI-powered conversational assistant that can:
    3. Includes a Delete Chat button to reset the session and start a fresh conversation.
    
 
-**2.**Backend (Agent System)****
+## **2.**Backend (Agent System)****
 
    1. Uses LangGraph’s ReAct agent to orchestrate reasoning + tool usage.
 
@@ -37,7 +37,7 @@ The idea is to build an AI-powered conversational assistant that can:
    3. The agent can decide when to call external tools (search, website visit, calculator).
    
 
-**3.**Tools Integrated****
+## **3.**Tools Integrated****
 
    1. DuckDuckGo Search - Retrieves live internet results.
  
@@ -46,14 +46,14 @@ The idea is to build an AI-powered conversational assistant that can:
   3.  Calculator - Evaluates mathematical expressions.
 
 
-**4.**Memory Handling****
+## **4.**Memory Handling****
 
    1. Implemented using MemorySaver from LangGraph.
  
    2. Ensures continuity of conversations across multiple queries in the same session.
    
 
-5.**Deployment**
+## 5.**Deployment**
 
   1. Built with Streamlit, making it easy to run locally or deployed free on Streamlit   Itself.
 
