@@ -26,9 +26,9 @@ def website_visit(url :  str ) -> str:
     markdown_content = re.sub(r"\n{3,}", "\n\n", markdown_content)
     
     # Return the processed markdown, trimming to a reasonable length
-    return markdown_content 
+    return markdown_content[:5000] #trim to 5k chars max
 
-# [:5000]trim to 5k chars max
+
 
 
 #print(website_visit.invoke("https://www.apple.com"))
