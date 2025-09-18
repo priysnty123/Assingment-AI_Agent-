@@ -5,7 +5,9 @@ AI Agent Chatbot
 The idea is to build an AI-powered conversational assistant that can:
 
 1.Answer user queries using an LLM.
+
 2.Search the internet for up-to-date information.
+
 3.Visit and extract content from specific websites.
 4.Perform calculations when needed.
 
