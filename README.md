@@ -103,7 +103,7 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ## 5. Run the Streamlit App
 ```bash 
-Streamlit run agent.py
+Streamlit run app.py
 ```
 
 
