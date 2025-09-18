@@ -76,10 +76,35 @@ The idea is to build an AI-powered conversational assistant that can:
 
 ## 🏃‍♂️ How to Run the Project  
 
-### 1. Clone the Repository  
+## 1. Clone the Repository  
 ```bash
 git clone https://github.com/your-username/ai-agent-chatbot.git
 cd ai-agent-chatbot
+```
+
+## 2. Create the Virtual Environment
+```bash
+python -m venv .venv
+source .venv/bin/activate   # On Mac/Linux
+.venv\Scripts\activate      # On Windows
+```
+
+## 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Set Environment Variables
+
+Create a .env file in the project root and add your API keys. Example:
+```bash 
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+## 5. Run the Streamlit App
+```bash 
+Streamlit run agent.py
+```
 
 
-2. 
+
