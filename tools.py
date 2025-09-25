@@ -57,7 +57,7 @@ search_tool.description = (
 """
     Always Striclty  use ddgs ot this  tool to fetch the latest or up-to-date information, including news, 
     general knowledge updates, election results, product prices, sports scores, stock 
-    market data, and weather. Never answer such queries from memory. 
+    market data and weather. Never answer such queries from memory. 
 
     Never rely on memory or mix memory with results. The final answer must always be 
     based solely on the search output.
